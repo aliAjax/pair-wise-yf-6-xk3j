@@ -56,7 +56,7 @@ h1 {
 .stats {
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(3, minmax(110px, 1fr));
+  grid-template-columns: repeat(4, minmax(110px, 1fr));
 }
 
 .stat,
@@ -258,6 +258,76 @@ textarea {
 .status.done {
   background: #d8ead6;
   color: #376336;
+}
+
+.status.rework {
+  background: #f6e3c5;
+  color: #8a5a1d;
+}
+
+.chip.warranty-active {
+  background: #d8ead6;
+  color: #376336;
+}
+
+.chip.warranty-expired {
+  background: #e3e5e1;
+  color: #6a7268;
+}
+
+.children {
+  border-left: 3px solid #e0e5dc;
+  display: grid;
+  gap: 10px;
+  padding-left: 12px;
+}
+
+.child {
+  background: #fafbf8;
+  border: 1px dashed #cfd6cc;
+  border-radius: 8px;
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+}
+
+.inline-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.inline-form input {
+  flex: 1 1 140px;
+  min-height: 38px;
+  width: auto;
+}
+
+.inline-form button {
+  min-height: 38px;
+}
+
+.message {
+  border-radius: 8px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  padding: 10px 14px;
+}
+
+.message.info {
+  background: #dde8f2;
+  color: #315674;
+}
+
+.message.warn {
+  background: #f8e3da;
+  color: #8a3b28;
+}
+
+.hint {
+  color: #828a80;
+  font-size: 0.8rem;
+  margin: 0;
 }
 
 .actions {
