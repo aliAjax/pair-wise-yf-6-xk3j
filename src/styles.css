@@ -56,7 +56,7 @@ h1 {
 .stats {
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(3, minmax(110px, 1fr));
+  grid-template-columns: repeat(4, minmax(110px, 1fr));
 }
 
 .stat,
@@ -266,6 +266,156 @@ textarea {
   gap: 8px;
 }
 
+.notice {
+  background: #fdf3e7;
+  border: 1px solid #e1b483;
+  border-radius: 8px;
+  color: #7a4d22;
+  font-weight: 700;
+  margin: 0 auto 16px;
+  max-width: 1240px;
+  padding: 12px 16px;
+}
+
+.hint {
+  color: #828a80;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.muted {
+  color: #828a80;
+  font-size: 0.86rem;
+}
+
+.inline-form {
+  align-items: end;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.inline-form input {
+  flex: 1 1 140px;
+  min-width: 120px;
+}
+
+.primary.small {
+  min-height: 42px;
+  padding: 8px 14px;
+}
+
+.warranty {
+  border-radius: 6px;
+  font-size: 0.86rem;
+  padding: 10px 12px;
+}
+
+.warranty.active {
+  background: #e6f0e2;
+  border: 1px solid #bcd1b4;
+  color: #376336;
+}
+
+.warranty.expired {
+  background: #f3ede6;
+  border: 1px solid #ddd0c2;
+  color: #7a5c3e;
+}
+
+.tag {
+  border-radius: 999px;
+  font-weight: 800;
+  margin-right: 6px;
+  padding: 3px 9px;
+}
+
+.warranty.active .tag {
+  background: #526d4e;
+  color: white;
+}
+
+.warranty.expired .tag {
+  background: #9a7a58;
+  color: white;
+}
+
+.rework {
+  background: #fbf8f2;
+  border: 1px dashed #d8c4a8;
+  border-radius: 8px;
+  display: grid;
+  gap: 6px;
+  padding: 10px 12px;
+}
+
+.rework.doing {
+  border-color: #b3c7de;
+}
+
+.rework.done {
+  background: #f4f7f2;
+  border-color: #c5d6c0;
+}
+
+.rework-tag,
+.rework-status {
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 3px 9px;
+}
+
+.rework-tag {
+  background: #c98d5f;
+  color: white;
+}
+
+.rework-status.pending {
+  background: #f2c5b2;
+  color: #813d2a;
+}
+
+.rework-status.doing {
+  background: #dde8f2;
+  color: #315674;
+}
+
+.rework-status.done {
+  background: #d8ead6;
+  color: #376336;
+}
+
+.logs {
+  display: grid;
+  gap: 4px;
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+}
+
+.log {
+  color: #6a7268;
+  font-size: 0.78rem;
+}
+
+.log time {
+  color: #98a094;
+  margin-right: 8px;
+}
+
+.log.reject {
+  color: #8a4632;
+  font-weight: 700;
+}
+
+.log.switch {
+  color: #315674;
+  font-weight: 700;
+}
+
 .empty {
   align-items: center;
   color: #828a80;
@@ -289,7 +439,7 @@ textarea {
   }
 
   .stats {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .repair {
